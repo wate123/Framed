@@ -9,7 +9,7 @@ public class PlayerController : PhysicsObject
     public float jumpTakeOffSpeed = 7;
     private float cdTime = 2.0f;
     private float nextDash;
-
+    private bool allowVertical;
 
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
@@ -19,6 +19,14 @@ public class PlayerController : PhysicsObject
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         //animator = GetComponent<Animator>();
+        allowVertical = false;
+    }
+    void OnTriggerEnter2D(Collider2D col2D){
+        if(col2D.name == "ladder"){
+            allowVertical = true;
+        }else {
+            allowVertical = false;
+        }
     }
 
     protected override void ComputeVelocity()
@@ -53,30 +61,30 @@ public class PlayerController : PhysicsObject
         }
 
 
-
-
-        //if (Input.GetButtonDown("Jump") && grounded)
+        //if (Input.GetKeyDown(KeyCode.UpArrow))
         //{
-        //    velocity.y = jumpTakeOffSpeed;
+        //    move.y = Input.GetAxis("Vertical") * maxSpeed;
         //}
-        //else if (Input.GetButtonUp("Jump"))
-        //{
-        //    if (velocity.y > 0)
-        //    {
-        //        velocity.y = velocity.y * 0.5f;
-        //    }
-        //}
+
 
         //flip the direction
-        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
-        if (flipSprite)
+        if (move.x < 0 )
         {
-            spriteRenderer.flipX = !spriteRenderer.flipX;
+            spriteRenderer.flipX = true;
+        }else if(move.x > 0){
+            spriteRenderer.flipX = false;
         }
 
         //animator.SetBool("grounded", grounded);
         //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+        if (allowVertical && Input.GetAxis("Vertical") != 0)
+        {
+            GetComponent<Rigidbody2D>().isKinematic = true;
+            transform.Translate(0, Input.GetAxis("Vertical") * 100 * Time.deltaTime, 0);
+        }else{
+            GetComponent<Rigidbody2D>().isKinematic = false;
+            targetVelocity = move * maxSpeed;
+        }
 
-        targetVelocity = move * maxSpeed;
     }
 }

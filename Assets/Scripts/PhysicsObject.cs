@@ -48,6 +48,7 @@ public class PhysicsObject : MonoBehaviour
     {
         velocity += gravityModifier * Physics2D.gravity * Time.deltaTime;
         velocity.x = targetVelocity.x;
+        //velocity.y = targetVelocity.y;
 
         grounded = false;
 
