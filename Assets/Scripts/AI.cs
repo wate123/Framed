@@ -32,7 +32,7 @@ public class AI : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-        hit = Physics2D.Raycast(transform.position, -transform.right);
+        hit = Physics2D.Raycast(transform.position, transform.right);
         Debug.Log(hit.transform);
         if(isPlayerInRange(hit)){
             Debug.Log("chase");

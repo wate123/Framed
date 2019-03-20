@@ -20,16 +20,25 @@ public class PlayerController : PhysicsObject
         spriteRenderer = GetComponent<SpriteRenderer>();
         //animator = GetComponent<Animator>();
         allowVertical = false;
+
     }
     void OnTriggerEnter2D(Collider2D col2D){
         if(col2D.name == "ladder"){
             allowVertical = true;
-        }else {
-            allowVertical = false;
+            GetComponent<Rigidbody2D>().isKinematic = true;
         }
     }
 
-    protected override void ComputeVelocity()
+	void OnTriggerExit2D(Collider2D other)
+	{
+        if (other.name == "ladder")
+        {
+            allowVertical = false;
+            GetComponent<Rigidbody2D>().isKinematic = false;
+        }
+	}
+
+	protected override void ComputeVelocity()
     {
         Vector2 move = Vector2.zero;
 
@@ -77,14 +86,13 @@ public class PlayerController : PhysicsObject
 
         //animator.SetBool("grounded", grounded);
         //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
-        if (allowVertical && Input.GetAxis("Vertical") != 0)
+        if (allowVertical && (Input.GetAxis("Vertical") > 0 | Input.GetAxis("Vertical") < 0))
         {
-            GetComponent<Rigidbody2D>().isKinematic = true;
-            transform.Translate(0, Input.GetAxis("Vertical") * 100 * Time.deltaTime, 0);
-        }else{
-            GetComponent<Rigidbody2D>().isKinematic = false;
-            targetVelocity = move * maxSpeed;
+            Debug.Log("test");
+            transform.Translate(0, Input.GetAxis("Vertical") * 10 , 0);
         }
+        GetComponent<Rigidbody2D>().isKinematic = false;
+        targetVelocity = move * maxSpeed;
 
     }
 }
