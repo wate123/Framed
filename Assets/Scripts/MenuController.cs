@@ -32,7 +32,10 @@ public class MenuController : MonoBehaviour
             }
         }
     }
-
+    public void StartGame()
+    {
+        SceneManager.LoadScene(1);
+    }
     public void ResumeGame()
     {
         isPaused = false;

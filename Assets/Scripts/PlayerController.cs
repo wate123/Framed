@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : PhysicsObject
 {
 
-    public float maxSpeed = 7;
+    public float maxSpeed = 4;
     public float jumpTakeOffSpeed = 7;
     private float cdTime = 2.0f;
     private float nextDash;
@@ -26,6 +27,17 @@ public class PlayerController : PhysicsObject
         if(col2D.name == "ladder"){
             allowVertical = true;
             GetComponent<Rigidbody2D>().isKinematic = true;
+        }
+        if(col2D.name == "key")
+        {
+            Destroy(col2D.gameObject);
+        }
+        if(col2D.name == "door")
+        {
+            if(GameObject.Find("key") == null)
+            {
+                SceneManager.LoadScene(2);
+            }
         }
     }
 
@@ -89,7 +101,7 @@ public class PlayerController : PhysicsObject
         if (allowVertical && (Input.GetAxis("Vertical") > 0 | Input.GetAxis("Vertical") < 0))
         {
             Debug.Log("test");
-            transform.Translate(0, Input.GetAxis("Vertical") * 10 , 0);
+            transform.Translate(0, Input.GetAxis("Vertical") * 2 , 0);
         }
         GetComponent<Rigidbody2D>().isKinematic = false;
         targetVelocity = move * maxSpeed;

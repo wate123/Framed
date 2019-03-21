@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.Events;
-
+using UnityEngine.SceneManagement;
 public class GameTimer : MonoBehaviour
 {
 
@@ -33,7 +32,9 @@ public class GameTimer : MonoBehaviour
         timer.text = "Timer: " + timeLeft.ToString("0.0");
         if (timeLeft < 0)
         {
+            
             timer.text = "Game Over!";
+            SceneManager.LoadScene(2);
         }
     }
 
