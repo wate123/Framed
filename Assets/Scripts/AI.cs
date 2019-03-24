@@ -9,13 +9,18 @@ public class AI : MonoBehaviour {
     public float MoveSpeed;
     private bool movingRight;
     private GameObject[] routePoint;
+    public Transform StartPoint;
+    private int currPoint;
+    private bool isLadder;
     private bool isOneCycle;
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         routePoint = GameObject.FindGameObjectsWithTag("Route");
+        currPoint = 1;
+        transform.position = Physics2D.Raycast(transform.position, Vector2.down).point;
+        //transform.position = new Vector3(StartPoint.position.x, transform.position.y, transform.position.z);
         isOneCycle = false;
-
     }
 	
     bool isPlayerInRange(RaycastHit2D hit2D){
@@ -37,16 +42,38 @@ public class AI : MonoBehaviour {
         //transform.position += ;
 
     }
-	void OnCollisionEnter2D(Collision2D collision)
-	{
-        if (collision.collider != null){
-            
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.name == "ladder")
+        {
+            isLadder = true;
         }
-	}
+    }
+    void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.name == "ladder")
+        {
+            isLadder = false;
+        }
+    }
 
-	// Update is called once per frame
-	void Update () {
-        transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
+
+    // Update is called once per frame
+    void Update () {
+        //Debug.Log(Vector2.Distance(transform.position, routePoint[currPoint].transform.position));
+        if(Vector2.Distance(transform.position, routePoint[currPoint].transform.position) < 30 )
+        {
+
+            currPoint++;
+        }
+        else
+        {
+            Vector2 heading = (routePoint[currPoint].transform.position - transform.position);
+            transform.Translate(heading/(heading.magnitude) * MoveSpeed * Time.deltaTime);
+            Debug.Log(currPoint);
+        }
+        //transform.position = Vector2.MoveTowards(transform.position, )
+        //transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
         hit = Physics2D.Raycast(transform.position, transform.right);
 
         if(isPlayerInRange(hit)){
@@ -55,7 +82,7 @@ public class AI : MonoBehaviour {
         }else if(isOneCycle){
             foreach (GameObject p in routePoint)
             {
-                //Debug.Log(p);
+                Debug.Log(p);
             }
 
             //Debug.Log(hit.distance);

@@ -26,7 +26,8 @@ public class PlayerController : PhysicsObject
     void OnTriggerEnter2D(Collider2D col2D){
         if(col2D.name == "ladder"){
             allowVertical = true;
-            GetComponent<Rigidbody2D>().isKinematic = true;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            gravityModifier = 0;
         }
         if(col2D.name == "key")
         {
@@ -46,7 +47,8 @@ public class PlayerController : PhysicsObject
         if (other.name == "ladder")
         {
             allowVertical = false;
-            GetComponent<Rigidbody2D>().isKinematic = false;
+            gravityModifier = 10;
+            GetComponent<Rigidbody2D>().gravityScale = 10;
         }
 	}
 
@@ -100,10 +102,11 @@ public class PlayerController : PhysicsObject
         //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
         if (allowVertical && (Input.GetAxis("Vertical") > 0 | Input.GetAxis("Vertical") < 0))
         {
-            Debug.Log("test");
-            transform.Translate(0, Input.GetAxis("Vertical") * 2 , 0);
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            transform.Translate(0, Input.GetAxis("Vertical") * 4 , 0);
         }
-        GetComponent<Rigidbody2D>().isKinematic = false;
+
+        //GetComponent<Rigidbody2D>().isKinematic = true;
         targetVelocity = move * maxSpeed;
 
     }
