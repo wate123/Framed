@@ -13,8 +13,9 @@ public class AI : MonoBehaviour {
     private int currPoint;
     private bool isLadder;
     private bool isOneCycle;
-	// Use this for initialization
-	void Start () {
+    private Vector2 heading;
+    // Use this for initialization
+    void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         routePoint = GameObject.FindGameObjectsWithTag("Route");
         currPoint = 1;
@@ -47,6 +48,7 @@ public class AI : MonoBehaviour {
         if(collision.name == "ladder")
         {
             isLadder = true;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
         }
     }
     void OnTriggerExit2D(Collider2D collision)
@@ -54,6 +56,7 @@ public class AI : MonoBehaviour {
         if (collision.name == "ladder")
         {
             isLadder = false;
+            GetComponent<Rigidbody2D>().gravityScale = 10;
         }
     }
 
@@ -61,41 +64,39 @@ public class AI : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //Debug.Log(Vector2.Distance(transform.position, routePoint[currPoint].transform.position));
-        if(Vector2.Distance(transform.position, routePoint[currPoint].transform.position) < 30 )
+        hit = Physics2D.Raycast(transform.position, heading / (heading.magnitude));
+        if (isPlayerInRange(hit))
         {
-
-            currPoint++;
+            Debug.Log("chase");
+            heading = (player.transform.position - transform.position);
+            transform.Translate((heading / (heading.magnitude)) * MoveSpeed * 1.5f * Time.deltaTime);
         }
         else
         {
-            Vector2 heading = (routePoint[currPoint].transform.position - transform.position);
-            transform.Translate(heading/(heading.magnitude) * MoveSpeed * Time.deltaTime);
-            Debug.Log(currPoint);
+            if (Vector2.Distance(transform.position, routePoint[currPoint].transform.position) < 30)
+            {
+
+                currPoint++;
+            }
+            else
+            {
+                heading = (routePoint[currPoint].transform.position - transform.position);
+                if (heading.x < 0)
+                {
+                    GetComponent<SpriteRenderer>().flipX = true;
+                }
+                else
+                {
+                    GetComponent<SpriteRenderer>().flipX = false;
+                }
+
+                transform.Translate((heading / (heading.magnitude)) * MoveSpeed * Time.deltaTime);
+
+            }
         }
+
         //transform.position = Vector2.MoveTowards(transform.position, )
         //transform.Translate(Vector2.right * MoveSpeed * Time.deltaTime);
-        hit = Physics2D.Raycast(transform.position, transform.right);
 
-        if(isPlayerInRange(hit)){
-            Debug.Log("chase");
-            Chase();
-        }else if(isOneCycle){
-            foreach (GameObject p in routePoint)
-            {
-                Debug.Log(p);
-            }
-
-            //Debug.Log(hit.distance);
-            //if (hit.transform.name == "wall" && hit.distance <= 50f){
-            //    transform.eulerAngles = new Vector3(0, -180, 0);
-            //    movingRight = false;
-            //}
-            //else
-            //{
-            //    transform.eulerAngles = new Vector3(0, 0, 0);
-            //    movingRight = true; 
-            //}
-            //WalkAround();
-        }
-	}
+    }
 }
