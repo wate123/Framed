@@ -64,6 +64,7 @@ public class AI : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //Debug.Log(Vector2.Distance(transform.position, routePoint[currPoint].transform.position));
+        heading = (routePoint[currPoint].transform.position - transform.position);
         hit = Physics2D.Raycast(transform.position, heading / (heading.magnitude));
         if (isPlayerInRange(hit))
         {
