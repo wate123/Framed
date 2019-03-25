@@ -65,12 +65,13 @@ public class AI : MonoBehaviour {
     void Update () {
         //Debug.Log(Vector2.Distance(transform.position, routePoint[currPoint].transform.position));
         heading = (routePoint[currPoint].transform.position - transform.position);
-        hit = Physics2D.Raycast(transform.position, heading / (heading.magnitude));
+        hit = Physics2D.Raycast(transform.position, heading);
+        //Debug.Log(hit.transform.tag);
         if (isPlayerInRange(hit))
         {
-            Debug.Log("chase");
+            Debug.Log(hit.transform.tag);
             heading = (player.transform.position - transform.position);
-            transform.Translate((heading / (heading.magnitude)) * MoveSpeed * 1.5f * Time.deltaTime);
+            transform.Translate(heading * MoveSpeed * 1.5f * Time.deltaTime);
         }
         else
         {
