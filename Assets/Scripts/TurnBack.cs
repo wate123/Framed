@@ -37,11 +37,16 @@ public class TurnBack : MonoBehaviour {
     // if this script is on an object with a collider display the Gui
     void OnTriggerEnter2D(Collider2D collision) 
 	{
+
         if (collision.tag == "Player")
         {
             GuiOn = true;
-            key.GetComponent<SpriteRenderer>().enabled = true;
-            key.GetComponent<BoxCollider2D>().enabled = true;
+            if(transform.tag == "KeyKeeper")
+            {
+                key.GetComponent<SpriteRenderer>().enabled = true;
+                key.GetComponent<BoxCollider2D>().enabled = true;
+            }
+
         }
 
     }
