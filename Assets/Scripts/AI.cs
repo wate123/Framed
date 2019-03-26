@@ -73,7 +73,7 @@ public class AI : MonoBehaviour {
             {
                 GetComponent<SpriteRenderer>().flipX = false;
             }
-            transform.Translate(heading * MoveSpeed * 1.3f * Time.deltaTime);
+            transform.Translate(heading * MoveSpeed * 1.5f * Time.deltaTime);
         }
         else
         {
