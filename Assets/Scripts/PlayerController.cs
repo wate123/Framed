@@ -24,28 +24,29 @@ public class PlayerController : PhysicsObject
         allowVertical = false;
 
     }
-    void OnTriggerEnter2D(Collider2D col2D){
-        if(col2D.name == "ladder"){
+    void OnTriggerEnter2D(Collider2D col2D) {
+        if (col2D.name == "ladder")
+        {
             allowVertical = true;
             GetComponent<Rigidbody2D>().gravityScale = 0;
             gravityModifier = 0;
         }
-        if(col2D.name == "key")
+        if (col2D.name == "key")
         {
             Destroy(col2D.gameObject);
         }
-        if(col2D.name == "door")
+        if (col2D.name == "door")
         {
-            if(GameObject.Find("key") == null)
+            if (GameObject.Find("key") == null)
             {
                 SceneManager.LoadScene(2);
             }
         }
     }
 
-	void OnTriggerExit2D(Collider2D other)
-	{
-        if (other.name == "ladder")
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.name == "ladder" || other.name == "elevator1")
         {
             allowVertical = false;
             gravityModifier = 10;
