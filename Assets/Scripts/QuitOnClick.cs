@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
+
 using System.Collections; 
 
 public class QuitOnClick : MonoBehaviour
@@ -10,5 +12,9 @@ public class QuitOnClick : MonoBehaviour
 #else
         Application.Quit(); 
 #endif
+    }
+    public void BackMain()
+    {
+        SceneManager.LoadScene(0);
     }
 }

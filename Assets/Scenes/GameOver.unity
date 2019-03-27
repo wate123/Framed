@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 821992528}
   - component: {fileID: 821992527}
   - component: {fileID: 821992529}
+  - component: {fileID: 821992530}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -231,9 +232,32 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 821992527}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 821992530}
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &821992530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821992525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2ffb918aa7b4c289e79f6a922e0623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &904625460
 GameObject:
   m_ObjectHideFlags: 0
@@ -325,6 +349,7 @@ GameObject:
   - component: {fileID: 1284121856}
   - component: {fileID: 1284121855}
   - component: {fileID: 1284121857}
+  - component: {fileID: 1284121858}
   m_Layer: 5
   m_Name: PlayAgain
   m_TagString: Untagged
@@ -433,12 +458,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1284121858}
+        m_MethodName: BackMain
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -446,6 +471,18 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1284121858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284121853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2ffb918aa7b4c289e79f6a922e0623, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1571099087
 GameObject:
   m_ObjectHideFlags: 0

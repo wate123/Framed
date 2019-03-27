@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : PhysicsObject
 {
 
-    public float maxSpeed = 7;
+    public float maxSpeed = 4;
     public float jumpTakeOffSpeed = 7;
     private float cdTime = 2.0f;
     private float nextDash;
-
+    private bool allowVertical;
+    public bool canMove;
 
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
@@ -19,10 +21,45 @@ public class PlayerController : PhysicsObject
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
         //animator = GetComponent<Animator>();
+        allowVertical = false;
+
+    }
+    void OnTriggerEnter2D(Collider2D col2D){
+        if(col2D.name == "ladder"){
+            allowVertical = true;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            gravityModifier = 0;
+        }
+        if(col2D.name == "key")
+        {
+            Destroy(col2D.gameObject);
+        }
+        if(col2D.name == "door")
+        {
+            if(GameObject.Find("key") == null)
+            {
+                SceneManager.LoadScene(2);
+            }
+        }
     }
 
-    protected override void ComputeVelocity()
+	void OnTriggerExit2D(Collider2D other)
+	{
+        if (other.name == "ladder")
+        {
+            allowVertical = false;
+            gravityModifier = 10;
+            GetComponent<Rigidbody2D>().gravityScale = 10;
+        }
+	}
+
+	protected override void ComputeVelocity()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis("Horizontal");
@@ -53,30 +90,30 @@ public class PlayerController : PhysicsObject
         }
 
 
-
-
-        //if (Input.GetButtonDown("Jump") && grounded)
+        //if (Input.GetKeyDown(KeyCode.UpArrow))
         //{
-        //    velocity.y = jumpTakeOffSpeed;
+        //    move.y = Input.GetAxis("Vertical") * maxSpeed;
         //}
-        //else if (Input.GetButtonUp("Jump"))
-        //{
-        //    if (velocity.y > 0)
-        //    {
-        //        velocity.y = velocity.y * 0.5f;
-        //    }
-        //}
+
 
         //flip the direction
-        bool flipSprite = (spriteRenderer.flipX ? (move.x > 0.01f) : (move.x < 0.01f));
-        if (flipSprite)
+        if (move.x < 0 )
         {
-            spriteRenderer.flipX = !spriteRenderer.flipX;
+            spriteRenderer.flipX = true;
+        }else if(move.x > 0){
+            spriteRenderer.flipX = false;
         }
 
         //animator.SetBool("grounded", grounded);
         //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
+        if (allowVertical && (Input.GetAxis("Vertical") > 0 | Input.GetAxis("Vertical") < 0))
+        {
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            transform.Translate(0, Input.GetAxis("Vertical") * 4 , 0);
+        }
 
+        //GetComponent<Rigidbody2D>().isKinematic = true;
         targetVelocity = move * maxSpeed;
+
     }
 }

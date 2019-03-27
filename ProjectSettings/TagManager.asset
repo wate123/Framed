@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Route
+  - PowerUp
+  - KeyKeeper
   layers:
   - Default
   - TransparentFX
@@ -42,8 +45,11 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 1480240511
+    uniqueID: 2138181859
+    locked: 0
+  - name: Foreground
+    uniqueID: 2008698579
     locked: 0
   - name: Character
-    uniqueID: 1434030559
+    uniqueID: 80068315
     locked: 0
