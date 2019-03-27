@@ -11,6 +11,7 @@ public class PlayerController : PhysicsObject
     private float cdTime = 2.0f;
     private float nextDash;
     private bool allowVertical;
+    public bool canMove;
 
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
@@ -54,6 +55,11 @@ public class PlayerController : PhysicsObject
 
 	protected override void ComputeVelocity()
     {
+        if (!canMove)
+        {
+            return;
+        }
+
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis("Horizontal");
