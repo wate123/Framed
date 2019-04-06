@@ -100,7 +100,9 @@ public class PlayerController : PhysicsObject
         if (move.x < 0 )
         {
             spriteRenderer.flipX = true;
-        }else if(move.x > 0){
+        }
+        else if(move.x > 0)
+        {
             spriteRenderer.flipX = false;
         }
 
