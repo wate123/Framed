@@ -31,6 +31,7 @@ public class PlayerController : PhysicsObject
             GetComponent<Rigidbody2D>().gravityScale = 0;
             gravityModifier = 0;
         }
+
         if (col2D.name == "key")
         {
             Destroy(col2D.gameObject);
@@ -46,7 +47,7 @@ public class PlayerController : PhysicsObject
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.name == "ladder" || other.name == "elevator1")
+        if (other.name == "ladder")
         {
             allowVertical = false;
             gravityModifier = 10;
