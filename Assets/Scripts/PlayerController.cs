@@ -24,27 +24,34 @@ public class PlayerController : PhysicsObject
         allowVertical = false;
 
     }
-    void OnTriggerEnter2D(Collider2D col2D){
-        if(col2D.name == "ladder"){
-            allowVertical = true;
-            GetComponent<Rigidbody2D>().gravityScale = 0;
-            gravityModifier = 0;
-        }
-        if(col2D.name == "key")
+    void OnTriggerEnter2D(Collider2D col2D) {
+
+
+        if (col2D.name == "key")
         {
             Destroy(col2D.gameObject);
         }
-        if(col2D.name == "door")
+        if (col2D.name == "door")
         {
-            if(GameObject.Find("key") == null)
+            if (GameObject.Find("key") == null)
             {
                 SceneManager.LoadScene(2);
             }
         }
     }
 
-	void OnTriggerExit2D(Collider2D other)
-	{
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.name == "ladder")
+        {
+            allowVertical = true;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            gravityModifier = 0;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
         if (other.name == "ladder")
         {
             allowVertical = false;
@@ -111,11 +118,17 @@ public class PlayerController : PhysicsObject
         if (allowVertical && (Input.GetAxis("Vertical") > 0 | Input.GetAxis("Vertical") < 0))
         {
             GetComponent<Rigidbody2D>().gravityScale = 0;
-            transform.Translate(0, Input.GetAxis("Vertical") * 4 , 0);
+            //Debug.Log(new Vector2(0, Input.GetAxis("Vertical")));
+            GetComponent<Rigidbody2D>().velocity = new Vector2(0, Input.GetAxis("Vertical") * (maxSpeed/3));
+
+        }
+        else
+        {
+            targetVelocity = move * maxSpeed;
         }
 
         //GetComponent<Rigidbody2D>().isKinematic = true;
-        targetVelocity = move * maxSpeed;
+
 
     }
 }
