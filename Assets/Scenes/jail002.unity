@@ -6226,10 +6226,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: fireball
       objectReference: {fileID: 0}
+    - target: {fileID: 369264472895705067, guid: 0972cad8c7db74141a10f7b1365d3508,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6781067759978284600, guid: 0972cad8c7db74141a10f7b1365d3508,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -214
+      value: 1598
       objectReference: {fileID: 0}
     - target: {fileID: 6781067759978284600, guid: 0972cad8c7db74141a10f7b1365d3508,
         type: 3}
