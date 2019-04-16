@@ -7,6 +7,22 @@ TagManager:
   - Route
   - PowerUp
   - KeyKeeper
+  - Slot
+  - Slots
+  - Hotbar
+  - CraftSystem
+  - ResultSlot
+  - DraggingItem
+  - Tooltip
+  - EventSystem
+  - ItemIcon
+  - Item
+  - Canvas
+  - Panel
+  - EquipmentSystem
+  - MainInventory
+  - Timer
+  - Obstacle
   layers:
   - Default
   - TransparentFX

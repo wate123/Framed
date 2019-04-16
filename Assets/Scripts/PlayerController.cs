@@ -12,6 +12,7 @@ public class PlayerController : PhysicsObject
     private float nextDash;
     private bool allowVertical;
     public bool canMove;
+    private Rigidbody2D rg2d;
 
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
@@ -22,15 +23,11 @@ public class PlayerController : PhysicsObject
         spriteRenderer = GetComponent<SpriteRenderer>();
         //animator = GetComponent<Animator>();
         allowVertical = false;
+        rg2d = GetComponent<Rigidbody2D>();
 
     }
     void OnTriggerEnter2D(Collider2D col2D) {
-        if (col2D.name == "ladder")
-        {
-            allowVertical = true;
-            GetComponent<Rigidbody2D>().gravityScale = 0;
-            gravityModifier = 0;
-        }
+
 
         if (col2D.name == "key")
         {
@@ -45,13 +42,23 @@ public class PlayerController : PhysicsObject
         }
     }
 
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.name == "ladder")
+        {
+            allowVertical = true;
+            GetComponent<Rigidbody2D>().gravityScale = 0;
+            gravityModifier = 0;
+        }
+    }
+
     void OnTriggerExit2D(Collider2D other)
     {
         if (other.name == "ladder")
         {
             allowVertical = false;
-            gravityModifier = 10;
-            GetComponent<Rigidbody2D>().gravityScale = 10;
+            gravityModifier = rb2d.gravityScale;
+            GetComponent<Rigidbody2D>().gravityScale = rb2d.gravityScale;
         }
 	}
 
@@ -84,6 +91,11 @@ public class PlayerController : PhysicsObject
             nextDash = Time.time + cdTime;
 
             //Dash logic
+
+            //targetVelocity = move * 100 * maxSpeed;
+            //if (Time.)
+            Debug.Log(targetVelocity);
+
         }
         //Toogle pick up 
         if (Input.GetKeyDown(KeyCode.E))
@@ -101,8 +113,11 @@ public class PlayerController : PhysicsObject
         //flip the direction
         if (move.x < 0 )
         {
+            //transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
             spriteRenderer.flipX = true;
-        }else if(move.x > 0){
+        }
+        else if(move.x > 0)
+        {
             spriteRenderer.flipX = false;
         }
 
@@ -110,12 +125,18 @@ public class PlayerController : PhysicsObject
         //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
         if (allowVertical && (Input.GetAxis("Vertical") > 0 | Input.GetAxis("Vertical") < 0))
         {
-            GetComponent<Rigidbody2D>().gravityScale = 0;
-            transform.Translate(0, Input.GetAxis("Vertical") * 4 , 0);
+            rg2d.gravityScale = 0;
+            //Debug.Log(new Vector2(0, Input.GetAxis("Vertical")));
+            rg2d.velocity = new Vector2(0, Input.GetAxis("Vertical") * (maxSpeed/3));
+
+        }
+        else
+        {
+            targetVelocity = move * maxSpeed;
         }
 
         //GetComponent<Rigidbody2D>().isKinematic = true;
-        targetVelocity = move * maxSpeed;
+
 
     }
 }
