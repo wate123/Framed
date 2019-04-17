@@ -12,6 +12,7 @@ public class PlayerController : PhysicsObject
     private float nextDash;
     private bool allowVertical;
     public bool canMove;
+    private Rigidbody2D rg2d;
 
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
@@ -22,6 +23,7 @@ public class PlayerController : PhysicsObject
         spriteRenderer = GetComponent<SpriteRenderer>();
         //animator = GetComponent<Animator>();
         allowVertical = false;
+        rg2d = GetComponent<Rigidbody2D>();
 
     }
     void OnTriggerEnter2D(Collider2D col2D) {
@@ -55,8 +57,8 @@ public class PlayerController : PhysicsObject
         if (other.name == "ladder")
         {
             allowVertical = false;
-            gravityModifier = 10;
-            GetComponent<Rigidbody2D>().gravityScale = 10;
+            gravityModifier = rb2d.gravityScale;
+            GetComponent<Rigidbody2D>().gravityScale = rb2d.gravityScale;
         }
 	}
 
@@ -89,6 +91,11 @@ public class PlayerController : PhysicsObject
             nextDash = Time.time + cdTime;
 
             //Dash logic
+
+            //targetVelocity = move * 100 * maxSpeed;
+            //if (Time.)
+            Debug.Log(targetVelocity);
+
         }
         //Toogle pick up 
         if (Input.GetKeyDown(KeyCode.E))
@@ -106,6 +113,7 @@ public class PlayerController : PhysicsObject
         //flip the direction
         if (move.x < 0 )
         {
+            //transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
             spriteRenderer.flipX = true;
         }
         else if(move.x > 0)
@@ -117,9 +125,9 @@ public class PlayerController : PhysicsObject
         //animator.SetFloat("velocityX", Mathf.Abs(velocity.x) / maxSpeed);
         if (allowVertical && (Input.GetAxis("Vertical") > 0 | Input.GetAxis("Vertical") < 0))
         {
-            GetComponent<Rigidbody2D>().gravityScale = 0;
+            rg2d.gravityScale = 0;
             //Debug.Log(new Vector2(0, Input.GetAxis("Vertical")));
-            GetComponent<Rigidbody2D>().velocity = new Vector2(0, Input.GetAxis("Vertical") * (maxSpeed/3));
+            rg2d.velocity = new Vector2(0, Input.GetAxis("Vertical") * (maxSpeed/3));
 
         }
         else
