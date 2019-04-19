@@ -291,12 +291,14 @@ public class PlayerInventory : MonoBehaviour
             if (!characterSystem.activeSelf)
             {
                 characterSystemInventory.openInventory();
+                //Time.timeScale = 0;
             }
             else
             {
                 if (toolTip != null)
                     toolTip.deactivateTooltip();
                 characterSystemInventory.closeInventory();
+                //Time.timeScale = 1;
             }
         }
 
@@ -305,12 +307,15 @@ public class PlayerInventory : MonoBehaviour
             if (!inventory.activeSelf)
             {
                 mainInventory.openInventory();
+                // Freeze the time
+                Time.timeScale = 0;
             }
             else
             {
                 if (toolTip != null)
                     toolTip.deactivateTooltip();
                 mainInventory.closeInventory();
+                Time.timeScale = 1;
             }
         }
 
