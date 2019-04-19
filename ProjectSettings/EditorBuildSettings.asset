@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: bb43b5ca0f54b41b3a20376ca64bf6dc
   - enabled: 1
-    path: Assets/Scenes/jail002.unity
+    path: Assets/Scenes/Jail002.unity
     guid: f87bca127e5856e4ebe4d3fc5b17b0d7
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
