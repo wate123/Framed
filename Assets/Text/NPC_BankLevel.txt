@@ -14,7 +14,7 @@ Alan:I should really ask Steve again. *Yawn*
 Alan: Wait, who are you again?    
 
 Marla: Hi, my name's Marla. Today's my first day on the job! 
-Marla: I've just been running around doing errands for Steve. I saw him enter the computer room earlier and caught a glimsp of the code. 
+Marla: I've just been running around doing errands for Steve. I saw him enter the computer room earlier and caught a glimpse of the code. 
 Marla: It was something like: * * * 1  
 Marla: Now, if you'll excuse me, I have more errands to do. 
 
@@ -27,12 +27,12 @@ Laci: I don't really get what they mean though.
 
 Bank Worker: All supplies can be found on the top floor, but you should have known that since you work here.  
 
-Bank Worker: The computer room is up ahead. 
+Bank Worker: The computer room is up ahead.  
 
 -------------- Random Text -------------
 Bank Worker: Hey, you very look familiar. Almost like the guy who just escaped jail...   
 
-Bank Worker: I thought we only hired one itern but since you're here can you grab me a cofee?   
+Bank Worker: I thought we only hired one intern but since you're here can you grab me a coffee?   
 
 Bank Worker: I feel safer with the guards around. 
 
@@ -42,5 +42,6 @@ Bank Worker: Is it 5 yet? I'm ready to leave.
 
 Bank Worker: This place is huge! Even I get lost sometimes. 
 
-
+--------------- Flash Drive -----------------
+Tora: I should take this ... might need it later ... 
 
