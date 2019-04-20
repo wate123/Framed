@@ -121,6 +121,7 @@
     <None Include="Assets\Text\NPC_Bobby.txt" />
     <None Include="Assets\Text\NPC_James.txt" />
     <None Include="Assets\Text\NPC_Jason.txt" />
+    <None Include="Assets\Text\Prolouge.txt" />
     <None Include="Assets\Text\NPC_Miyagi.txt" />
     <None Include="Assets\Text\NPC_Tim.txt" />
     <None Include="Assets\Text\NPC_BankLevel.txt" />
