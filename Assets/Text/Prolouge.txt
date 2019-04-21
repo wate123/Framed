@@ -3,3 +3,24 @@ Judge: The Jury will now give their verdict!
 Jury: We the Jury find Tora GUILTY of embezzlement. 
 Judge: The Jury has spoken! 
 Judge: Tora will receive the maximum sentence of 175 years in prison for embezzling $1,500,000 from Gaming Corp. This court is adjorned!  
+
+Rex: Tora you shouldn't be in here. I don't believe for a second you stole all that money. Everyone knows you wouldn't even hurt a fly! 
+Rex: This was obviously a set up! You've been Framed! 
+Rex: I'll try to help you from the outside. You need to sneak out of here and when you do, come see me. 
+Rex: Good luck in there partner ...
+
+Phoe: I'm very disappointed in you Tora. After all those years of service to this city, you sullied the department's name for two million dollars.   
+Phoe: I don't know what to say. I hope you really think about what you've done in there.    
+Phoe: Don't try to escape either. I'll find and bring you in myself, and it won't be pretty.  
+
+    
+Draco: Hey Tora, even if you did steal all that money you probably had a good reason. I still remember all the times you helped me pay to keep the shop up. It's been hard without you.  
+Draco: I'd feel better if you were still out here helping me out. Phoe has been helping me since you've been locked up. Sometimes she looks sad but also happy at the same time.     
+Draco: She says you were always her favorite. I have to go now, but I'll come back to chat with you again.  
+
+Jolene: I was actually the one who reported you to the authorities Tora. The system picked some unusual activities and large transfers from your account. 
+Jolene: I didn't take you for the money laundering type. I guess some people don't show their true colors until they're caught.    
+Jolene: You account has been frozen until detective Rex finishes up the investigation.
+Jolene: I'd feel guilty if you didn't know the truth. Getting this off my chest makes me feel better. Now that I've told you, I'm leaving.    
+
+    
