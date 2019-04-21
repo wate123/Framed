@@ -14,6 +14,8 @@ public class PlayerController : PhysicsObject
     public bool canMove;
     private Rigidbody2D rg2d;
 
+    public GameTimer moreTime;
+
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
 
@@ -39,6 +41,11 @@ public class PlayerController : PhysicsObject
             {
                 SceneManager.LoadScene(2);
             }
+        }
+        if (col2D.name == "ExtraTime")
+        {
+            col2D.gameObject.SetActive(false);
+            moreTime.MoreExtraTime();
         }
     }
 

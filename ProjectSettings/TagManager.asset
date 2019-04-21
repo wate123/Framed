@@ -23,6 +23,7 @@ TagManager:
   - MainInventory
   - Timer
   - Obstacle
+  - ExtraTime
   layers:
   - Default
   - TransparentFX
