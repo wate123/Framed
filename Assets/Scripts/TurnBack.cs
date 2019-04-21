@@ -26,12 +26,14 @@ public class TurnBack : MonoBehaviour {
 	public GUISkin customSkin;
 
     private GameObject key;
+    public AudioSource keySound;
 
     private void Start()
     {
         key = GameObject.Find("key");
         key.GetComponent<SpriteRenderer>().enabled = false;
         key.GetComponent<BoxCollider2D>().enabled = false;
+        keySound.GetComponent<AudioSource>();
     }
 
     // if this script is on an object with a collider display the Gui
@@ -45,6 +47,7 @@ public class TurnBack : MonoBehaviour {
             {
                 key.GetComponent<SpriteRenderer>().enabled = true;
                 key.GetComponent<BoxCollider2D>().enabled = true;
+                keySound.Play();
             }
 
         }

@@ -13,6 +13,7 @@ public class ActivateTextAtLine : MonoBehaviour
     private bool waitForPress;
 
     private GameObject key;
+    public AudioSource keySound;
 
 
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class ActivateTextAtLine : MonoBehaviour
         key = GameObject.Find("key");
         key.GetComponent<SpriteRenderer>().enabled = false;
         key.GetComponent<BoxCollider2D>().enabled = false;
-
+        keySound.GetComponent<AudioSource>();
         theTextBox = FindObjectOfType<TextBoxManager>();
     }
 
@@ -62,6 +63,7 @@ public class ActivateTextAtLine : MonoBehaviour
             {
                 key.GetComponent<SpriteRenderer>().enabled = true;
                 key.GetComponent<BoxCollider2D>().enabled = true;
+                keySound.Play();
             }
 
         }
