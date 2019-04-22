@@ -117,6 +117,7 @@
     <Compile Include="Assets\Scripts\weapon.cs" />
     <None Include="Assets\Shaders\ReflectiveWaterWav.shader" />
     <None Include="Assets\Text\example.txt" />
+    <None Include="Assets\Text\NPC_PoliceStation.txt" />
     <None Include="Assets\Text\NPC_Tyrone.txt" />
     <None Include="Assets\Text\NPC_Bobby.txt" />
     <None Include="Assets\Text\NPC_James.txt" />
