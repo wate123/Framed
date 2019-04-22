@@ -126,6 +126,7 @@
     <None Include="Assets\Text\NPC_Tim.txt" />
     <None Include="Assets\Text\NPC_BankLevel.txt" />
     <None Include="Assets\Text\NPC_Davis.txt" />
+    <None Include="Assets\Text\NPC_RexHouse.txt" />
     <None Include="Assets\InventoryMaster\readme.txt" />
     <None Include="Assets\Text\NPC_FakeJames.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
