@@ -16,6 +16,8 @@ public class PlayerController : PhysicsObject
 
     public GameTimer moreTime;
 
+    public Animator animator;
+
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
 
@@ -71,6 +73,8 @@ public class PlayerController : PhysicsObject
 
 	protected override void ComputeVelocity()
     {
+
+
         if (!canMove)
         {
             return;
@@ -79,6 +83,11 @@ public class PlayerController : PhysicsObject
         Vector2 move = Vector2.zero;
 
         move.x = Input.GetAxis("Horizontal");
+
+
+        animator.SetFloat("Speed", Mathf.Abs(move.x));
+
+        Debug.Log(move.x);
 
         //Toggle clue book
         if (Input.GetKeyDown(KeyCode.C))

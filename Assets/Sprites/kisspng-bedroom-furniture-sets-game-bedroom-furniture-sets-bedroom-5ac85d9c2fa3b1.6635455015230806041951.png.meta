@@ -1,0 +1,1066 @@
+fileFormatVersion: 2
+guid: 5abd428498baf41088c6c4c453b077c5
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_0
+    21300002: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_1
+    21300004: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_2
+    21300006: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_3
+    21300008: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_4
+    21300010: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_5
+    21300012: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_6
+    21300014: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_7
+    21300016: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_8
+    21300018: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_9
+    21300020: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_10
+    21300022: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_11
+    21300024: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_12
+    21300026: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_13
+    21300028: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_14
+    21300030: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_15
+    21300032: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_16
+    21300034: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_17
+    21300036: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_18
+    21300038: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_19
+    21300040: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_20
+    21300042: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_21
+    21300044: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_22
+    21300046: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_23
+    21300048: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_24
+    21300050: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_25
+    21300052: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_26
+    21300054: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_27
+    21300056: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_28
+    21300058: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_29
+    21300060: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_30
+    21300062: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_31
+    21300064: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_32
+    21300066: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_33
+    21300068: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_34
+    21300070: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_35
+    21300072: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_36
+    21300074: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_37
+    21300076: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_38
+    21300078: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_39
+    21300080: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_40
+    21300082: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_41
+    21300084: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_42
+    21300086: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_43
+    21300088: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_44
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 452
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35cbcff3379d4459b30d575b7f35d9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 448
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91276174016ea496b8d55f43b2fe0201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93406e1a80fc14219948c7707ce5a389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_3
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 453
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1bed23fe97f43d093420c26c6ec334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_4
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 384
+        width: 256
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc30901344d2748779d23d7bca3281b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 31
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a97d9e560ce864b6e96b1200ab275993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_6
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 401
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa8e0e598d6144800aeeac6b8c2c2ad0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_7
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 401
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae0500af0cfd24bb3bd2476b2b39fab2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_8
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 401
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297f94a7951e646b58c3d01fb2b364f9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_9
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 405
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e6e82fcc67a34c6c8dd9b8ef8a3499a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 396
+        width: 31
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d3faafde1b94965b21f7665716fc61
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 352
+        width: 64
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da4ea5460b5740678976a45a27dbd06
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_12
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 336
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434c4d3e4e7e7452ea7a3fe4947870a8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 332
+        width: 32
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e159d31a7b82c45e986113c9791f9c09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_14
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 341
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e6d11bf749a4b468ce9c944eff0b1f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_15
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 352
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0938b3398ef8a489d9335164b520c70e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_16
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 342
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f7389760da954b1683521686cf39088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_17
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 300
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 428379dd2693e4df184ff6164767d7ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_18
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 300
+        width: 63
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd620635117054187a375da9fb073c28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_19
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 320
+        width: 54
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c841500df8fa7431fbe468d9a1ff3ea7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca12d2120fc7490b99a77693d317241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_21
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 304
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d69e992ef73f4f20b445937aa31a263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_22
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 288
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e0b09ee73666444c8adb5e2448e2c3b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_23
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 306
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a0007d644a147a7bbb3e005fafe2e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_24
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 273
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d7ee05de69134247957af3d823bce81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 269
+        width: 28
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d71447aeea1bf4b499532a39edb131a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_26
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 258
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391e2367ffac94a41bdb60fb04341e70
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_27
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 268
+        width: 14
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 356ac07cdb4ed4a3e925cb3c3102dfc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_28
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 268
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80df6e00cd714c81b833c2cf694fed4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_29
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 268
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29dc85bdd82f94bf0b00560e2b24d9f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_30
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 268
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201ceea67ed9e408ab0de22e501c55d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_31
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 268
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93be213e6d84e4abbaacdac6b61b0b6a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 196
+        width: 32
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff60ca7f67dd4401a960b1f0621e8a4a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_33
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 236
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf2030b4a7a44018a9ff4eef5e988da
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_34
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 209
+        width: 56
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea32394b7ae54410fb50a166dc9b3a82
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_35
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 234
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0348daa8c28fd45c29ffb168dd27246b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_36
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 234
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 121a076b8da68429681234793ddbfe9a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_37
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 163
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dadc4425dbf48b3921cf727c73b329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_38
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 177
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a42001af15aa443f89add0d9d16134d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_39
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed602d3e35f2451ea56a2c9b0e0c7ed
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_40
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 202
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 895f0976118274b93bd6942678853748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_41
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 202
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b7136496f5c4c41a71976507bdeb96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_42
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 64
+        width: 54
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d412eed83a5154badbf66ff7561fdd6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_43
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 160
+        width: 54
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68e6476c033444b7cac570547c1a8bfd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: kisspng-bedroom-furniture-sets-game-bedroom-furniture-sets-bedroom-5ac85d9c2fa3b1.6635455015230806041951_44
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 109
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 058cf553be9bc41868d3dfc9e9871575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 135e4e66c18bc4f7a9c3caf1927d38db
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

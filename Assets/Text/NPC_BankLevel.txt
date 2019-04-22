@@ -6,7 +6,7 @@ Tora: I made it to the computer room but now I need something to save the bank s
 Tora: There's a key pad lock on the door. Got to find the passcode before I can get in...
 
 -------------- Clues ------------------
-Colten: The computer room holds all the bank statements for everyone in the city! I think the room was somewhere near the top floor. 
+Bank Worker: The computer room holds all the bank statements for everyone in the city! I think the room was somewhere near the top floor. 
 
 Alan: *Yawn* It's been a long week. I barely got any sleep last night...
 Alan: Steve asked me to grab some documents from the computer room. I already forgot the combination. It was something like: 5 * * *  
