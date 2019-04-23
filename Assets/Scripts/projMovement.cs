@@ -18,10 +18,11 @@ public class projMovement : MonoBehaviour
     {
         Debug.Log(collision.name);
         //sets rex inactive when he is hit with the fireball 
-        if (collision.name == "Rex")
+        if (collision.tag == "Enemy")
         {
-            Rex.gameObject.SetActive(false);
-            //Destroy(collision.gameObject);
+            //collision.SetActive(false);
+            Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 }

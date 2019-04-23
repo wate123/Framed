@@ -13,8 +13,120 @@ MonoBehaviour:
   m_Name: ItemDatabase
   m_EditorClassIdentifier: 
   itemList:
-  - itemName: New Item
+  - itemName: Clue 1 Alan
     itemID: 0
+    itemDesc: 
+    itemIcon: {fileID: 21300000, guid: ee4d53a93c365f8488fd7eeb4e2970d1, type: 3}
+    itemModel: {fileID: 1404939012912603995, guid: 26f1cc0dd07d14a479181cc0ce3dd2e6,
+      type: 3}
+    itemValue: 1
+    itemType: 3
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes: []
+  - itemName: Alan
+    itemID: 1
+    itemDesc: Keypad combination 5***
+    itemIcon: {fileID: 21300000, guid: ee4d53a93c365f8488fd7eeb4e2970d1, type: 3}
+    itemModel: {fileID: 1404939012912603995, guid: 26f1cc0dd07d14a479181cc0ce3dd2e6,
+      type: 3}
+    itemValue: 1
+    itemType: 3
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes:
+    - attributeName: Slots
+      attributeValue: 1
+  - itemName: Maria
+    itemID: 2
+    itemDesc: Keypad combination ***1
+    itemIcon: {fileID: 21300000, guid: ee4d53a93c365f8488fd7eeb4e2970d1, type: 3}
+    itemModel: {fileID: 7434656527044762479, guid: 4f3003e18ad584023a0e50b1cd73ed75,
+      type: 3}
+    itemValue: 1
+    itemType: 2
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes:
+    - attributeName: Slots
+      attributeValue: 1
+  - itemName: Robby
+    itemID: 3
+    itemDesc: Keypad combination *7**
+    itemIcon: {fileID: 21300000, guid: ee4d53a93c365f8488fd7eeb4e2970d1, type: 3}
+    itemModel: {fileID: 3193823196780133133, guid: 223b0e33dc74e4cd1a09b95b844c1eb1,
+      type: 3}
+    itemValue: 1
+    itemType: 3
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes:
+    - attributeName: Slots
+      attributeValue: 1
+  - itemName: Laci
+    itemID: 4
+    itemDesc: Keypad combination **2*
+    itemIcon: {fileID: 21300000, guid: ee4d53a93c365f8488fd7eeb4e2970d1, type: 3}
+    itemModel: {fileID: 7442009014328873238, guid: 05fb61a0c8d334e6089a39844d993791,
+      type: 3}
+    itemValue: 1
+    itemType: 3
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes:
+    - attributeName: Slots
+      attributeValue: 1
+  - itemName: Bank Worker
+    itemID: 5
+    itemDesc: Supplies room top floor
+    itemIcon: {fileID: 21300000, guid: ab00a13766b0bdd4eb4663517def615f, type: 3}
+    itemModel: {fileID: 3671038703117228053, guid: aab4b23a492ee42d7917e2f01fc963d3,
+      type: 3}
+    itemValue: 1
+    itemType: 3
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes: []
+  - itemName: Bank Worker 2
+    itemID: 6
+    itemDesc: 
+    itemIcon: {fileID: 0}
+    itemModel: {fileID: 5922587680331024748, guid: 6b4b3aba436754f82bfd18d65148aabc,
+      type: 3}
+    itemValue: 1
+    itemType: 3
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes: []
+  - itemName: Bank Worker 3
+    itemID: 7
+    itemDesc: 
+    itemIcon: {fileID: 0}
+    itemModel: {fileID: 5546183015337096686, guid: 6b5fdbce023c5408a9d0c9ed1330af21,
+      type: 3}
+    itemValue: 1
+    itemType: 3
+    itemWeight: 0
+    maxStack: 1
+    indexItemInList: 999
+    rarity: 0
+    itemAttributes: []
+  - itemName: New Item
+    itemID: 8
     itemDesc: 
     itemIcon: {fileID: 0}
     itemModel: {fileID: 0}

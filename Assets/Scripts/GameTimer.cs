@@ -11,6 +11,9 @@ public class GameTimer : MonoBehaviour
     public Text timer;
     bool notComplete = true;
     private Health hp;
+    public float LoseInterval;
+    private GameObject[] Enemys;
+    private Vector2 velocity;
 
     public bool extrTime = false;
 
@@ -18,6 +21,8 @@ public class GameTimer : MonoBehaviour
     void Start()
     {
         timeLeft = TotalTime;
+        Enemys = GameObject.FindGameObjectsWithTag("Enemy");
+        velocity = Enemys[0].GetComponent<Rigidbody2D>().velocity;
     }
 
     // Update is called once per frame
@@ -35,13 +40,36 @@ public class GameTimer : MonoBehaviour
         extrTime = true;
     }
 
+    public void PauseGame() {
+        notComplete = false;
+        if (Enemys.Length > 0)
+        {
+            for (int i = 0; i < Enemys.Length; i++)
+            {
+                Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+                //Enemys[i].GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+
+            }
+        }
+    }
+    public void ResumeGame()
+    {
+        notComplete = true;
+        for (int i = 0; i < Enemys.Length; i++)
+        {
+            Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+            Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+            //Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+        }
+    }
+
+
     void SetCountText()
     {
         timer.text = "Timer: " + timeLeft.ToString("0.0");
-        if (System.Math.Abs(TotalTime - timeLeft) - 15f > 0.1)
+        if (System.Math.Abs(TotalTime - timeLeft) - LoseInterval > 0.1)
         {
-            Debug.Log("x");
-            TotalTime -= 15;
+            TotalTime -= LoseInterval;
             GameObject.FindWithTag("Player").GetComponent<Health>().health -= 1;
         }
 

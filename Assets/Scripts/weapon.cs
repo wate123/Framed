@@ -8,6 +8,8 @@ public class weapon : MonoBehaviour
     public GameObject bulletPrefab;
     public bool lookingRight;
     public float posOffset;
+    private float nextDash;
+    public float cdTime = 2.0f;
 
     // Update is called once per frame
     void Update()
@@ -21,9 +23,11 @@ public class weapon : MonoBehaviour
             lookingRight = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) && Time.time > nextDash)
         {
+            nextDash = Time.time + cdTime;
             shoot();
+
         }
     }
     void shoot()

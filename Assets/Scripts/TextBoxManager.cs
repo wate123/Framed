@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class TextBoxManager : MonoBehaviour
 {
@@ -16,14 +17,22 @@ public class TextBoxManager : MonoBehaviour
     public bool stopPlayerMovement;
     private bool isTyping = false;
     private bool cancelTyping = false;
-
+    private GameTimer timer;
     //setting the value for textSpeed with higher numbers makes the text scroll slower
-    public float textSpeed; 
+    public float textSpeed;
+    [SerializeField]
+    private int countScene = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         player = FindObjectOfType<PlayerController>();
+        //unique = 
+        if (!SceneManager.GetActiveScene().name.Contains("Pro"))
+        {
+            timer = GameObject.FindWithTag("Timer").GetComponent<GameTimer>();
+        }
+
         if(textFile != null)
         {
             textLines = (textFile.text.Split('\n'));
@@ -105,6 +114,11 @@ public class TextBoxManager : MonoBehaviour
         {
             player.canMove = false;
         }
+        if (!SceneManager.GetActiveScene().name.Contains("Pro"))
+        {
+            timer.PauseGame();
+        }
+
         StartCoroutine(TextScroll(textLines[currentLine]));
 
     }
@@ -114,6 +128,17 @@ public class TextBoxManager : MonoBehaviour
         textBox.SetActive(false);
         isActive = false;
         player.canMove = true;
+        //timer.ResumeGame();
+        if (!SceneManager.GetActiveScene().name.Contains("Pro"))
+        {
+            timer.PauseGame();
+        }
+        else
+        {
+            
+            SceneManager.LoadScene(Random.Range(2, 5));
+            countScene++;
+        }
     }
 
 

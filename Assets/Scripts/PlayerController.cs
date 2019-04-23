@@ -13,6 +13,7 @@ public class PlayerController : PhysicsObject
     private bool allowVertical;
     public bool canMove;
     private Rigidbody2D rg2d;
+    private float tempGravity;
 
     public GameTimer moreTime;
 
@@ -28,6 +29,7 @@ public class PlayerController : PhysicsObject
         //animator = GetComponent<Animator>();
         allowVertical = false;
         rg2d = GetComponent<Rigidbody2D>();
+        tempGravity = rg2d.gravityScale;
 
     }
     void OnTriggerEnter2D(Collider2D col2D) {
@@ -67,7 +69,7 @@ public class PlayerController : PhysicsObject
         {
             allowVertical = false;
             gravityModifier = rb2d.gravityScale;
-            GetComponent<Rigidbody2D>().gravityScale = rb2d.gravityScale;
+            GetComponent<Rigidbody2D>().gravityScale = tempGravity;
         }
 	}
 
@@ -85,7 +87,7 @@ public class PlayerController : PhysicsObject
         move.x = Input.GetAxis("Horizontal");
 
 
-        animator.SetFloat("Speed",move.x);
+        animator.SetFloat("Speed", Mathf.Abs(move.x));
 
         Debug.Log(move.x);
 
