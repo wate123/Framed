@@ -20,8 +20,7 @@ public class TextBoxManager : MonoBehaviour
     private GameTimer timer;
     //setting the value for textSpeed with higher numbers makes the text scroll slower
     public float textSpeed;
-    [SerializeField]
-    private int countScene = 0;
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -30,7 +29,7 @@ public class TextBoxManager : MonoBehaviour
         //unique = 
         if (!SceneManager.GetActiveScene().name.Contains("Pro"))
         {
-            timer = GameObject.FindGameObjectWithTag("Timer").GetComponent<GameTimer>();
+            timer = GameObject.FindWithTag("Timer").GetComponent<GameTimer>();
 
         }
 
@@ -118,7 +117,7 @@ public class TextBoxManager : MonoBehaviour
         if (timer != null)
         {
             //Debug.Log(timer);
-            //timer.PauseGame();
+            timer.PauseGame();
         }
 
         StartCoroutine(TextScroll(textLines[currentLine]));
@@ -133,13 +132,28 @@ public class TextBoxManager : MonoBehaviour
         //timer.ResumeGame();
         if (timer != null)
         {
-            //timer.PauseGame();
+            timer.ResumeGame();
         }
         else
         {
-            
-            SceneManager.LoadScene(Random.Range(2, 5));
-            countScene++;
+            if (SceneManager.GetActiveScene().name == "Prolouge")
+            {
+                SceneManager.LoadScene(2);
+            }
+            else if (SceneManager.GetActiveScene().name == "Prolouge Draco")
+            {
+                SceneManager.LoadScene(3);
+            }else if (SceneManager.GetActiveScene().name == "Prolouge Jolene")
+            {
+                SceneManager.LoadScene(4);
+            }else if (SceneManager.GetActiveScene().name == "Prolouge Phoe")
+            {
+                SceneManager.LoadScene(5);
+            }else if (SceneManager.GetActiveScene().name == "Prolouge Rex")
+            {
+                SceneManager.LoadScene(6);
+            }
+
         }
     }
 

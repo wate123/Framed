@@ -43,7 +43,7 @@ public class PlayerController : PhysicsObject
         {
             if (GameObject.Find("key") == null)
             {
-                SceneManager.LoadScene(2);
+                SceneManager.LoadScene(7);
             }
         }
         if (col2D.name == "ExtraTime")

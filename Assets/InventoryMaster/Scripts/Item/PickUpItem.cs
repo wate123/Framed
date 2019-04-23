@@ -17,11 +17,11 @@ public class PickUpItem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_inventory != null && Input.GetKeyDown(KeyCode.E))
+        if (_inventory != null && Input.GetKeyDown(KeyCode.F) && gameObject.CompareTag("Clue"))
         {
             float distance = Vector3.Distance(this.gameObject.transform.position, _player.transform.position);
 
-            if (distance <= 3)
+            if (distance <= 100)
             {
                 bool check = _inventory.checkIfItemAllreadyExist(item.itemID, item.itemValue);
                 if (check)

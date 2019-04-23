@@ -774,7 +774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7ae41f5a73f34c21a6ef1ed45e56226, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainMenuScene: 
+  MainMenuScene: 1
   PauseMenu: {fileID: 0}
   isPaused: 0
 --- !u!1 &763491935

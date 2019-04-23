@@ -52,7 +52,6 @@ public class ActivateTextAtLine : MonoBehaviour
             bool check = _inventory.checkIfItemAllreadyExist(i, 1);
             //Debug.Log(_inventory.ItemsInInventory[i].itemID);
             //Debug.Log(_inventory.ItemsInInventory[i].itemID);
-            Debug.Log(_inventory.ItemsInInventory.Count);
             if (!check)
             {
                 return false;
@@ -102,6 +101,7 @@ public class ActivateTextAtLine : MonoBehaviour
             theTextBox.EnableTextBox();
             if (transform.tag == "KeyKeeper")
             {
+                Destroy(gameObject);
                 key.GetComponent<SpriteRenderer>().enabled = true;
                 key.GetComponent<BoxCollider2D>().enabled = true;
             }
