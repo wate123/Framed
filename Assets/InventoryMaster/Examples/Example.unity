@@ -5692,6 +5692,7 @@ MonoBehaviour:
   inventory: {fileID: 1795835618}
   characterSystem: {fileID: 12067648}
   craftSystem: {fileID: 1557412573}
+  clue: {fileID: 0}
   HPMANACanvas: {fileID: 0}
   currentHealth: 60
 --- !u!23 &676390638

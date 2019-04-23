@@ -52,6 +52,7 @@ public class ActivateTextAtLine : MonoBehaviour
             bool check = _inventory.checkIfItemAllreadyExist(i, 1);
             //Debug.Log(_inventory.ItemsInInventory[i].itemID);
             //Debug.Log(_inventory.ItemsInInventory[i].itemID);
+            Debug.Log(_inventory.ItemsInInventory.Count);
             if (!check)
             {
                 return false;
@@ -67,15 +68,18 @@ public class ActivateTextAtLine : MonoBehaviour
             {
                 if (CheckHaveAllCombination())
                 {
-                    Debug.Log("in");
                     gameObject.GetComponent<Collider2D>().enabled = false;
+                }
+                else
+                {
+                    theTextBox.ReloadScript(theText);
+                    theTextBox.currentLine = startLine;
+                    theTextBox.endAtLine = endLine;
+                    theTextBox.EnableTextBox();
                 }
 
             }
-            theTextBox.ReloadScript(theText);
-            theTextBox.currentLine = startLine;
-            theTextBox.endAtLine = endLine;
-            theTextBox.EnableTextBox();
+
 
         }
     }

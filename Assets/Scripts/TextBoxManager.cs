@@ -30,7 +30,8 @@ public class TextBoxManager : MonoBehaviour
         //unique = 
         if (!SceneManager.GetActiveScene().name.Contains("Pro"))
         {
-            timer = GameObject.FindWithTag("Timer").GetComponent<GameTimer>();
+            timer = GameObject.FindGameObjectWithTag("Timer").GetComponent<GameTimer>();
+
         }
 
         if(textFile != null)
@@ -114,9 +115,10 @@ public class TextBoxManager : MonoBehaviour
         {
             player.canMove = false;
         }
-        if (!SceneManager.GetActiveScene().name.Contains("Pro"))
+        if (timer != null)
         {
-            timer.PauseGame();
+            //Debug.Log(timer);
+            //timer.PauseGame();
         }
 
         StartCoroutine(TextScroll(textLines[currentLine]));
@@ -129,9 +131,9 @@ public class TextBoxManager : MonoBehaviour
         isActive = false;
         player.canMove = true;
         //timer.ResumeGame();
-        if (!SceneManager.GetActiveScene().name.Contains("Pro"))
+        if (timer != null)
         {
-            timer.PauseGame();
+            //timer.PauseGame();
         }
         else
         {

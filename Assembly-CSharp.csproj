@@ -132,6 +132,7 @@
     <None Include="Assets\Text\NPC_Davis.txt" />
     <None Include="Assets\Text\NPC_RexHouse.txt" />
     <None Include="Assets\InventoryMaster\readme.txt" />
+    <None Include="Assets\Text\NPC_JoleneHouse.txt" />
     <None Include="Assets\Text\NPC_FakeJames.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/jun/Desktop/Framed/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

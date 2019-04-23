@@ -22,6 +22,7 @@ public class GameTimer : MonoBehaviour
     {
         timeLeft = TotalTime;
         Enemys = GameObject.FindGameObjectsWithTag("Enemy");
+
         velocity = Enemys[0].GetComponent<Rigidbody2D>().velocity;
     }
 
@@ -31,6 +32,7 @@ public class GameTimer : MonoBehaviour
         if (notComplete == true)
         {
             timeLeft -= Time.deltaTime;
+
             SetCountText();
         }
     }
@@ -40,28 +42,28 @@ public class GameTimer : MonoBehaviour
         extrTime = true;
     }
 
-    public void PauseGame() {
-        notComplete = false;
-        if (Enemys.Length > 0)
-        {
-            for (int i = 0; i < Enemys.Length; i++)
-            {
-                Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
-                //Enemys[i].GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    //public void PauseGame() {
+    //    notComplete = false;
+    //    if (Enemys.Length > 0)
+    //    {
+    //        for (int i = 0; i < Enemys.Length; i++)
+    //        {
+    //            Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+    //            //Enemys[i].GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
-            }
-        }
-    }
-    public void ResumeGame()
-    {
-        notComplete = true;
-        for (int i = 0; i < Enemys.Length; i++)
-        {
-            Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
-            Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
-            //Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
-        }
-    }
+    //        }
+    //    }
+    //}
+    //public void ResumeGame()
+    //{
+    //    notComplete = true;
+    //    for (int i = 0; i < Enemys.Length; i++)
+    //    {
+    //        Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+    //        Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+    //        //Enemys[i].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+    //    }
+    //}
 
 
     void SetCountText()
@@ -70,6 +72,7 @@ public class GameTimer : MonoBehaviour
         if (System.Math.Abs(TotalTime - timeLeft) - LoseInterval > 0.1)
         {
             TotalTime -= LoseInterval;
+
             GameObject.FindWithTag("Player").GetComponent<Health>().health -= 1;
         }
 

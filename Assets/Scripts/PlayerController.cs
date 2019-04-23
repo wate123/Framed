@@ -17,7 +17,7 @@ public class PlayerController : PhysicsObject
 
     public GameTimer moreTime;
 
-    public Animator animator;
+    //public Animator animator;
 
     private SpriteRenderer spriteRenderer;
     //private Animator animator;
@@ -87,9 +87,8 @@ public class PlayerController : PhysicsObject
         move.x = Input.GetAxis("Horizontal");
 
 
-        animator.SetFloat("Speed", Mathf.Abs(move.x));
+        //animator.SetFloat("Speed", Mathf.Abs(move.x));
 
-        Debug.Log(move.x);
 
         //Toggle clue book
         if (Input.GetKeyDown(KeyCode.C))
