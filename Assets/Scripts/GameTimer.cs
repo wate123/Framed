@@ -12,6 +12,8 @@ public class GameTimer : MonoBehaviour
     bool notComplete = true;
     private Health hp;
 
+    public bool extrTime = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +30,10 @@ public class GameTimer : MonoBehaviour
         }
     }
 
+    public void MoreExtraTime()
+    {
+        extrTime = true;
+    }
 
     void SetCountText()
     {
@@ -38,13 +44,17 @@ public class GameTimer : MonoBehaviour
             TotalTime -= 15;
             GameObject.FindWithTag("Player").GetComponent<Health>().health -= 1;
         }
+
+        if (extrTime == true)
+        {
+            timeLeft = timeLeft + 10;
+            extrTime = false;
+        }
+
         if (timeLeft < 0)
         {
-            
             timer.text = "Game Over!";
             SceneManager.LoadScene(2);
         }
     }
-
-
 }
