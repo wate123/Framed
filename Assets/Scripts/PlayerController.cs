@@ -85,7 +85,7 @@ public class PlayerController : PhysicsObject
         move.x = Input.GetAxis("Horizontal");
 
 
-        animator.SetFloat("Speed", Mathf.Abs(move.x));
+        animator.SetFloat("Speed",move.x);
 
         Debug.Log(move.x);
 
